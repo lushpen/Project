@@ -26,7 +26,11 @@ body {
     background: var(--container-bg-color);
     color: var(--text-color);
 }
-
+.toggle-theme
+{
+    display: flex;
+    flex-direction: row-reverse;
+}
 .main {
     display: flex;
     flex-direction: row-reverse;
