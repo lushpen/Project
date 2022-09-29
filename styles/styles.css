@@ -1,6 +1,30 @@
+        :root {
+            --panel-bg-color: #000000;
+            --sidebar-title-color:#53ade9;
+            --sidebar-text-color:#ffffff;
+            --main-bg-color:#ffffff;
+            --red-color:#FB6D3A;
+            --container-bg-color: #c5c0c7;
+            --title-color:#0e0e0f;
+            --text-color: #2f3542;
+            --years-color: #a58282;
+        }
+
+        :root[theme='dark'] {
+            --panel-bg-color: #130d0d;
+            --sidebar-title-color: #d3d3d3;
+            --sidebar-text-color: #ffcdcd;
+            --main-bg-color: #2e2e2e;
+            --red-color: #3afb8a;
+            --container-bg-color: #00000000;
+            --title-color: #1802da;
+            --text-color: #c0b5b5;
+            --years-color: #A8A8A8;
+        }
 body {
     font-family: 'Montserrat', sans-serif;
-    background: #E5E5E5;
+    background: var(--container-bg-color);
+    color: var(--text-color);
 }
 
 .main {
@@ -12,7 +36,7 @@ body {
 }
 
 .main-content {
-    background: #fff;
+    background: var(--main-bg-color);
     padding: 104px 88px;
 }
 
@@ -25,7 +49,7 @@ body {
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
-    color: #000000;
+    color: var(--text-color);
     margin-bottom: 20px;
 }
 
@@ -33,7 +57,7 @@ body {
     font-weight: 700;
     font-size: 45px;
     line-height: 55px;
-    color: #000000;
+    color: var(--title-color);
     margin-bottom: 24px;
 }
 
@@ -41,7 +65,7 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    color: #595959;
+    color: var(--text-color);
     width: 400px;
 }
 
@@ -56,7 +80,7 @@ body {
     font-weight: 700;
     font-size: 22px;
     line-height: 27px;
-    color: #000000;
+    color: var(--title-color);
     margin-bottom: 8px;
 }
 
@@ -70,7 +94,7 @@ body {
     font-weight: 700;
     font-size: 14px;
     line-height: 24px;
-    color: #000000;
+    color: var(--text-color);
 }
 
 .projects {
@@ -78,7 +102,7 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    color: #595959;
+    color: var(--text-color);
 }
 
 .projects-link {
@@ -86,7 +110,7 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    color: #565E6A;
+    color: var(--text-color);
     margin-left: 16px;
 }
 
@@ -95,30 +119,30 @@ body {
     font-weight: 700;
     font-size: 14px;
     line-height: 24px;
-    color: #000000;
+    color: var(--text-color);
 }
 
 /* work-styles */
 /* .work {} */
 
 .work-pos {
-    font-weight: 700;
-    font-size: 16px;
+    font-weight: 600;
+    font-size: 14px;
     line-height: 20px;
-    color: #000000;
+    color: var(--text-color);
     margin-bottom: 10px;
 }
 
 .org {
-    color: #FB6D3A;
+    color: var(--red-color);
 }
 
-.work-yaers {
+.work-years {
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
-    color: #A8A8A8;
+    color: var(--years-color);
     margin-bottom: 8px;
 }
 
@@ -127,7 +151,7 @@ body {
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
-    color: #000000;
+    color: var(--text-color);
 }
 
 .work-list {
@@ -136,7 +160,7 @@ body {
     font-weight: 700;
     font-size: 14px;
     line-height: 24px;
-    color: #595959;
+    color: var(--text-color);
     width: 525px;
 }
 
@@ -145,23 +169,36 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    color: #595959;
+    color: var(--text-color);
 }
 
 
 /* education-styles */
 .edu-univ {
-    font-weight: 700;
-    font-size: 16px;
+    font-weight: 600;
+    font-size: 14px;
     line-height: 20px;
-    color: #FB6D3A;
+    color: var(--red-color);
     margin-bottom: 10px;
+}
+
+/* download section */
+.download {
+    padding: 20px
+}
+
+.download a {
+    /* background: #1E2939; */
+    text-decoration: none;
+    padding-top: 4px;
+    /* color: #3afb64; */
 }
 
 
 /* side bar */
 .sidebar {
-    background: #1E2939;
+    background: var(--panel-bg-color);
+    /* background: #1E2939; */
     width: 370px;
 }
 
@@ -170,7 +207,7 @@ body {
     font-weight: 700;
     font-size: 22px;
     line-height: 27px;
-    color: #FFFFFF;
+    color: var(--sidebar-title-color);
     margin-bottom: 8px;
 }
 
@@ -194,7 +231,7 @@ body {
     font-weight: 700;
     font-size: 14px;
     line-height: 24px;
-    color: #FFFFFF;
+    color:var(--sidebar-text-color);
     margin-right: 8px;
 }
 
@@ -212,12 +249,12 @@ body {
 }
 
 .list-text {
-    color: #FFFFFF;
+    color: var(--sidebar-text-color);
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
 }
 
 .listDots {
-    color: #FB6D3A;
+    color: var(--red-color);
 }

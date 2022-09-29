@@ -1,137 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="app.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
     <title>Resume</title>
-
-</head>
-
-<body>
+  </head>
+  <body>
     <!--Main content-->
     <div class="main">
-        <div class="main-content">
-            <!--about user-->
-            <div class="about">
-                <h2 class="about-position">Node.JS Developer</h2>
-                <h1 class="about-name">Dmytro Kondratenko</h1>
-                <p class="about-discr">Somehow I was needed a simple math operation checker for personal use. That was a simple telegram chat-bot, which have become a start of my IT way.
-                </p>
-            </div>
-            <!--projects-->
-            <div class="project">
-                <h3 class="title">Projects</h3>
-                <ol class="proj-list">
-                    <li class="project-item">
-                        <span class="projects"><a href="https://t.me/my_combo_bot/" target="_blank"
-                                class="projects-link"><b>Telegram combo chat-bot</b></a> ............
-                            <span class="proj-bracket">[</span> JavaScript, Node.js <span class="proj-bracket">]</span></span>
-                    </li>
-                    <li class="project-item">
-                        <span class="projects">
-                            <a href="https://t.me/lushpen_bot/" target="_blank"
-                                class="projects-link"><b>Math-project</b></a>
-                            ............................................
-                            <span class="proj-bracket">[</span>JavaScript, Node.js <span class="proj-bracket">]</span></span>
-                    </li>
-                </ol>
-            </div>
-            <!--work-->
-            <div class="work">
-                <h3 class="title">Work Experience</h3>
-                <!--1 company-->
-                <div>
-                    <h4 class="work-pos">Back-End Developer <span class="org">Freelance</span> </h4>
-                    <p class="work-years">february 2022 - up to now <span class="line">|</span> Ukraine</p>
-                    <ul class="work-list">
-                        <li class="work-item">Little experience in HTML and CSS.</li>
-                        <li class="work-item">Starting in JS.</li>
-                        <li class="work-item">Trying to comprehend the GIT.</li>
-                        <li class="work-item">First project in Node.JS.</li>
-                        <li class="work-item">Heroku Deployment with MongoDB Atlas.</li>
-                    </ul>
-                </div>
-                <!--2 company-->
-                <div>
-                    <h4 class="work-pos">Engineer <span class="org">CenterEnergo</span></h4>
-                    <p class="work-years">may 2006-up to now <span class="line">|</span> Ukraine</p>
-                    <ul class="work-list">
-                        <li class="work-item">Maintenance and repairing of electrical system equipment.</li>
-                        <li class="work-item">Upgrading legacy systems to the IC-based modern tech.</li>
-                        <li class="work-item">Programing of microprocessor protection settings.</li>
-                        <li class="work-item">Design and development of new electrical equipment systems.</li>
-                    </ul>
-                </div>
-                <!--3 company-->
-                <div>
-                    <h4 class="work-pos">Student <span class="org">University</span></h4>
-                    <p class="work-years">2001 - may 2006 <span class="line">|</span> Ukraine</p>
-                    <ul class="work-list">
-                        <li class="work-item">Start to learn electricity and liked it.</li>
-                        <li class="work-item">Basement knowledge about computing technology.</li>
-                        <li class="work-item">Learning algorithms through BASIC and PASCAL translation.</li>
-                        <li class="work-item">Trying to get skills in asm, but has no much luck.</li>
-                      </ul>
-                </div>
-            </div>
-            <!--education-->
-            <div class="education">
-                <h3 class="title">Education</h3>
-                <h5 class="edu-univ">National Technical University of Ukraine<br>“Igor Sikorsky Kyiv Polytechnic Institute”</h5>
-                <h5 class="work-pos">FEA</h5>
-                <p class="work-years">september 2000 - june 2006 <span class="line">|</span> Ukraine</p>
-            </div>
-            <div class="download">
-          <a href="resume.pdf" download="Kondratenko.pdf">Get this resume in PDF</a> 
-                </div>
+      <div>
+        <input type="button" value="Change colour" id="toggle-theme" />
+      </div>
+      <div class="main-content">
+        <!--about user-->
+        <div class="about">
+          <h2 class="about-position">Node.JS Developer</h2>
+          <h1 class="about-name">Dmytro Kondratenko</h1>
+          <p class="about-discr">
+            Somehow I was needed a simple math operation checker for personal
+            use. That was a simple telegram chat-bot, which have become a start
+            of my IT way.
+          </p>
         </div>
-        <!--Sidebar-->
-        <aside class="sidebar">
-            <img class="img-style" src="./img/photo.jpg" width="370" height="354" alt="my photo">
-            <!--contacts-->
-            <div class="sidebar-contacts">
-                <h3 class="sidebar-title">Contacts</h3>
-                <div>
-                    <p>
-                        <span class="contact-type">C:</span>
-                        <a href="tel:+380679854341" class="contact-link">+38 (067) 985 43 41</a>
-                    </p>
-                    <p>
-                        <span class="contact-type">E:</span>
-                        <a href="mailto:work.tptes@gmail.com" class="contact-link">work.tptes@gmail.com</a>
-                    </p>
-                </div>
-            </div>
-            <!--tech skils-->
-            <div class="techskills">
-                <h3 class="sidebar-title">Tech Skills</h3>
-                <ul class="list">
-                    <li class="listDots"><span class="list-text">HTML5</span></li>
-                    <li class="listDots"><span class="list-text">CSS3</span></li>
-                    <li class="listDots"><span class="list-text">GIT</span></li>
-                    <li class="listDots"><span class="list-text">JavaScript</span></li>
-                    <li class="listDots"><span class="list-text">Node.js</span></li>
-                    <li class="listDots"><span class="list-text">MongoDB</span></li> 
-                </ul>
-            </div>
-            <!--soft skils-->
-            <div class="techskills">
-                <h3 class="sidebar-title">Soft Skills</h3>
-                <ul class="list">
-                    <li class="listDots"><span class="list-text">Scrum</span></li>
-                    <li class="listDots"><span class="list-text">Agile</span></li>
-                    <li class="listDots"><span class="list-text">GTD</span></li>
-                    <li class="listDots"><span class="list-text">Teamwork</span></li>
-                </ul>
-            </div>
-        </aside>
+        <!--projects-->
+        <div class="project">
+          <h3 class="title">Projects</h3>
+          <ol class="proj-list">
+            <li class="project-item">
+              <span class="projects"
+                ><a
+                  href="https://t.me/my_combo_bot/"
+                  target="_blank"
+                  class="projects-link"
+                  ><b>Telegram combo chat-bot</b></a
+                >
+                ............ <span class="proj-bracket">[</span> JavaScript,
+                Node.js <span class="proj-bracket">]</span></span
+              >
+            </li>
+            <li class="project-item">
+              <span class="projects">
+                <a
+                  href="https://t.me/lushpen_bot/"
+                  target="_blank"
+                  class="projects-link"
+                  ><b>Math-project</b></a
+                >
+                ............................................
+                <span class="proj-bracket">[</span>JavaScript, Node.js
+                <span class="proj-bracket">]</span></span
+              >
+            </li>
+          </ol>
+        </div>
+        <!--work-->
+        <div class="work">
+          <h3 class="title">Work Experience</h3>
+          <!--1 company-->
+          <div>
+            <h4 class="work-pos">
+              Trainee JS Developer <span class="org">Freelance</span>
+            </h4>
+            <p class="work-years">
+              february 2022 - up to now <span class="line">|</span> Ukraine
+            </p>
+            <ul class="work-list">
+              <li class="work-item">Little experience in HTML and CSS.</li>
+              <li class="work-item">Starting in JS.</li>
+              <li class="work-item">Trying to comprehend the GIT.</li>
+              <li class="work-item">First project in Node.JS.</li>
+              <li class="work-item">Heroku Deployment with MongoDB Atlas.</li>
+            </ul>
+          </div>
+          <!--2 company-->
+          <div>
+            <h4 class="work-pos">
+              Engineer <span class="org">CenterEnergo</span>
+            </h4>
+            <p class="work-years">
+              may 2006-up to now <span class="line">|</span> Ukraine
+            </p>
+            <ul class="work-list">
+              <li class="work-item">
+                Maintenance and repairing of electrical system equipment.
+              </li>
+              <li class="work-item">
+                Upgrading legacy systems to the IC-based modern tech.
+              </li>
+              <li class="work-item">
+                Programing of microprocessor protection settings.
+              </li>
+              <li class="work-item">
+                Design and development of new electrical equipment systems.
+              </li>
+            </ul>
+          </div>
+          <!--3 company-->
+          <div>
+            <h4 class="work-pos">
+              Student <span class="org">University</span>
+            </h4>
+            <p class="work-years">
+              2001 - may 2006 <span class="line">|</span> Ukraine
+            </p>
+            <ul class="work-list">
+              <li class="work-item">
+                Start to learn electricity and liked it.
+              </li>
+              <li class="work-item">
+                Basement knowledge about computing technology.
+              </li>
+              <li class="work-item">
+                Learning algorithms through BASIC and PASCAL translation.
+              </li>
+              <li class="work-item">
+                Trying to get skills in asm, but has no much luck.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--education-->
+        <div class="education">
+          <h3 class="title">Education</h3>
+          <h5 class="edu-univ">
+            National Technical University of Ukraine<br />“Igor Sikorsky Kyiv
+            Polytechnic Institute”
+          </h5>
+          <h5 class="work-pos">FEA</h5>
+          <p class="work-years">
+            september 2000 - june 2006 <span class="line">|</span> Ukraine
+          </p>
+        </div>
+
+        <div class="download">
+          <a href="resume.pdf" download="Kondratenko.pdf"
+            >Get this resume in PDF</a
+          >
+        </div>
+      </div>
+      <!--Sidebar-->
+      <aside class="sidebar">
+        <img
+          class="img-style"
+          src="./img/photo.jpg"
+          width="370"
+          height="354"
+          alt="my photo"
+        />
+        <!--contacts-->
+        <div class="sidebar-contacts">
+          <h3 class="sidebar-title">Contacts</h3>
+          <div>
+            <p>
+              <span class="contact-type">C:</span>
+              <a href="tel:+380679854341" class="contact-link"
+                >+38 (067) 985 43 41</a
+              >
+            </p>
+            <p>
+              <span class="contact-type">E:</span>
+              <a href="mailto:work.tptes@gmail.com" class="contact-link"
+                >work.tptes@gmail.com</a
+              >
+            </p>
+          </div>
+        </div>
+        <!--tech skils-->
+        <div class="techskills">
+          <h3 class="sidebar-title">Tech Skills</h3>
+          <ul class="list">
+            <li class="listDots"><span class="list-text">HTML5</span></li>
+            <li class="listDots"><span class="list-text">CSS3</span></li>
+            <li class="listDots"><span class="list-text">GIT</span></li>
+            <li class="listDots"><span class="list-text">JavaScript</span></li>
+            <li class="listDots"><span class="list-text">Node.js</span></li>
+            <li class="listDots"><span class="list-text">MongoDB</span></li>
+          </ul>
+        </div>
+        <!--soft skils-->
+        <div class="techskills">
+          <h3 class="sidebar-title">Soft Skills</h3>
+          <ul class="list">
+            <li class="listDots"><span class="list-text">Scrum</span></li>
+            <li class="listDots"><span class="list-text">Agile</span></li>
+            <li class="listDots"><span class="list-text">GTD</span></li>
+            <li class="listDots"><span class="list-text">Teamwork</span></li>
+          </ul>
+        </div>
+      </aside>
     </div>
-</body>
+    <script>
+      const toggleBtn = document.querySelector("#toggle-theme");
+      toggleBtn.addEventListener("click", function () {
+        if (document.documentElement.hasAttribute("theme")) {
+          document.documentElement.removeAttribute("theme");
+        } else {
+          document.documentElement.setAttribute("theme", "dark");
+        }
+      });
+    </script>
+  </body>
 </html>
